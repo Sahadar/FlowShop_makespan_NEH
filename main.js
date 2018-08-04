@@ -115,6 +115,9 @@ $(document).ready(function() {
 	$('.problem-submit').on('click', function() {
 		var problemInputData = $('.problem-input').val();
 
-		calculate(problemInputData);
+		var result = calculate(problemInputData);
+
+		$('.result-chromosome').text(result.nehChromosome);
+		$('.result-fx').text(result.nehResult);
 	});
 });
